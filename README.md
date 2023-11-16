@@ -1,9 +1,12 @@
 # SDM630-Modbus
 SDM630-Modbus 3P4W Multifunction Power Analyser WithRS485 Port modbus RTU for the domoticz plugin
 
+Forked from MFxMF/SDM630-Modbus
+Now works with the latest Domoticz (2023.2 and up) and allows multiple instances of the plugin
+
 Installation: <br>
 cd ~/domoticz/plugins<br>
-git clone https://github.com/MFxMF/SDM630-Modbus <br>
+git clone https://github.com/gizmocuz/SDM630-Modbus <br>
 
 <br>
 Used python modules: <br>
