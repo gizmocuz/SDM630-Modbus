@@ -16,5 +16,10 @@ minimalmodbus -> http://minimalmodbus.readthedocs.io<br>
 Restart your domoticz server.
 <br>
 <br>
-Tested on domoticz 3.9319
+Tested on domoticz 2023.2 and up
+<br>
+<br>
+If you have multiple devices use a comma seperate list of modbus id's, like 1,2,3
+
+
 
