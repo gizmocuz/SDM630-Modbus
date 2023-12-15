@@ -148,10 +148,13 @@ class BasePlugin:
                         doffset+=1
 
                     self.rs485.serial.close()  #  Close that door !
+                    Domoticz.Heartbeat(5)
                 except Exception as error:
                     self.rs485.serial.close()  #  Close that door !
                     #Domoticz.Log('**** Connection problem with modbus id: {0:2d} ****'.format(imbid));
                     Domoticz.Log("An exception occurred: " + str(error) + ", line: " + str(error.__traceback__.tb_lineno))
+                    Domoticz.Heartbeat(1)   # set Heartbeat to 1 second to get us back here for quick retry.
+                    self.runInterval = 1  # call again in 1 second
 
 global _plugin
 _plugin = BasePlugin()
