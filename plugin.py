@@ -75,7 +75,7 @@ class BasePlugin:
 
             if doffset not in Devices:
                 if (fmt == "V"):
-                    Domoticz.Device(Name=label, Unit=doffset,TypeName=fmt,Used=0).Create()
+                    Domoticz.Device(Name=label, Unit=doffset,TypeName="General",Subtype=0x08,Used=0).Create()
                 elif (fmt == "A"):
                     Domoticz.Device(Name=label, Unit=doffset,TypeName="Current (Single)",Used=0).Create()
                 elif (fmt == "W"):
