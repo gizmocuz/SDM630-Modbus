@@ -93,8 +93,8 @@ class SDM230(SDM):
             "export_demand_power_active": (0x005c, 2, "Export Demand Power (Active)", "W", 2, 1, ""),
             "total_demand_current": (0x0102, 2, "Total Demand Current", "A", 3, 1, ""),
             "total_energy_active": (0x0156, 2, "Total Energy (Active)", "kWh", 4, 1, "total_demand_power_active"),
-            "import_energy_active": (0x0048, 2, "Imported Energy (Active)", "kWh", 1, 1, "import_demand_power_active"),
-            "export_energy_active": (0x004a, 2, "Exported Energy (Active)", "kWh", 1, 1, "export_demand_power_active"),
+            "import_energy_active": (0x0048, 2, "Imported Energy (Active)", "kWh", 1, 1, "power_active"),
+            "export_energy_active": (0x004a, 2, "Exported Energy (Active)", "kWh", 1, 1, "power_active"),
         }
 
 
