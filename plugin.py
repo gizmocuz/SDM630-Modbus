@@ -48,8 +48,8 @@ class BasePlugin:
         
         devicecreated = []
         self.pollinterval = int(Parameters["Mode3"]) * 1 
-        if self.pollinterval < 30:
-            self.pollinterval = 30
+        if self.pollinterval < 5:
+            self.pollinterval = 5
 
         modbusIDs = Parameters["Mode2"].split(',');
         
