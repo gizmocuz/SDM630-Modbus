@@ -10,7 +10,7 @@ SDM-72
 SDM-72v2
 SDM-120
 SDM-230
-SDM-640
+SDM-630
 
 Installation: <br>
 cd ~/domoticz/plugins<br>
